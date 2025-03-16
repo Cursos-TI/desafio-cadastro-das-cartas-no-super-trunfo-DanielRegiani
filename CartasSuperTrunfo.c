@@ -4,29 +4,35 @@ int main(){
     printf("Desafio Super Trunfo\n");
     printf("Novo Commit\n");
 
-    printf("Carta 1: \n");
-
-    char estado = 'A';
-    char codigo[04];
+    char estado;
+    char codigo[5];
     char nome[50];
     int populacao;
     float area;
     float pib;
     int numeropontosturisticos;
 
-    printf("Estado: \n");
+    printf("Carta 1: \n");
+
+    printf("Estado:\n");
     scanf("%c", &estado);
-    printf("Código: \n");
+
+    printf("Código:\n");
     scanf("%s", &codigo);
-    printf("Nome da Cidade: \n");
+
+    printf("Nome da Cidade:\n");
     scanf("%s", &nome);
-    printf("População: \n");
+
+    printf("População:\n");
     scanf("%d", &populacao);
-    printf("Área: \n");
+
+    printf("Área:\n");
     scanf("%f", &area);
-    printf("PIB: \n");
+
+    printf("PIB:\n");
     scanf("%f", &pib);
-    printf("Número de Pontos Turísticos: \n");
+
+    printf("Número de Pontos Turísticos:\n");
     scanf("%d", &numeropontosturisticos);
 
     printf("Estado: %c \n", estado);
