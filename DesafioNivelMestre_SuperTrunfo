@@ -1,0 +1,84 @@
+#include <stdio.h>
+
+int main(){
+
+    //carta 1
+
+    char estadoA[20] = "A";
+    char codigoA[20] = "A01";
+    char nomeA[20] = "sao_paulo";
+    signed long int populacaoA = 12325000;
+    float areaA = 1521.11;
+    float pibA = 69279997952.00;
+    int numeropontosturisticosA = 50;
+    float densidade_populacionalA = (populacaoA / areaA);
+    float pib_per_capitaA = (pibA / populacaoA);
+    float superpoderA;
+   
+
+    //carta 2
+
+    char estadoB[20]= "B";
+    char codigoB[20] = "B02";
+    char nomeB[20] = "rio_de_janeiro";
+    signed long int populacaoB = 6748000;
+    float areaB = 1200.25;
+    float pibB = 300499992576.00;
+    int numeropontosturisticosB = 30;
+    float densidade_populacionalB = (populacaoB / areaB);
+    float pib_per_capitaB = (pibB / populacaoB);
+    float superpoderB;
+   
+
+    printf("Carta 1 \n");
+
+    printf("Estado: %s \n", estadoA);
+    printf("Codigo: %s \n", codigoA);
+    printf("Nome da Cidade: %s \n", nomeA);
+    printf("Populacao: %d Milhoes de Habitantes \n", populacaoA);
+    printf("Area: %.2f km2\n", areaA);
+    printf("PIB: %.2f Bilhoes de Reais\n", pibA);
+    printf("Numero de pontos Turisticos: %d \n", numeropontosturisticosA);
+    printf("Densidade Populacional: %.2f Hab/km2\n", densidade_populacionalA);
+    printf("PIB Per Capita: %.2f Reais  \n", pib_per_capitaA);
+    superpoderA = (float)(populacaoA + areaA + pibA + numeropontosturisticosA + pib_per_capitaA) - (densidade_populacionalA);
+    printf("Super Poder de A: %.2f \n", superpoderA);
+
+    printf("Carta 2 \n");
+
+    printf("Estado: %s \n", estadoB);
+    printf("Codigo: %s \n", codigoB);
+    printf("Nome da Cidade: %s \n", nomeB);
+    printf("Populacao: %d Milhoes de Habitantes\n", populacaoB);
+    printf("Area: %.2f km2\n", areaB);
+    printf("PIB: %.2f Bilhoes de Reais\n", pibB);
+    printf("Numero de pontos Turisticos: %d \n", numeropontosturisticosB);
+    printf("Densidade Populacional: %.2f Hab/km2\n", densidade_populacionalB);
+    printf("PIB Per Capita: %.2f Reais  \n", pib_per_capitaB);
+    superpoderB = (float)(populacaoB + areaB + pibB + numeropontosturisticosB + pib_per_capitaB) - (densidade_populacionalB);
+    printf("Super Poder de B: %.2f \n", superpoderB);
+
+
+    printf("Comparacao de Cartas \n");
+    printf("Carta 1 \n");
+
+    printf("Populacao: %d \n", populacaoA > populacaoB);
+    printf("Area:%d \n", areaA > areaB);
+    printf("PIB: %d \n", pibA > pibB);
+    printf("Pontos Turisticos:%d \n", numeropontosturisticosA > numeropontosturisticosB);
+    printf("Densidade: %d \n", densidade_populacionalA > densidade_populacionalB);
+    printf("PIB per Capta: %d \n", pib_per_capitaA > pib_per_capitaB);
+    printf("Super Poder: %d \n", superpoderA > superpoderB);
+
+    printf("Carta 2 \n");
+
+    printf("Populacao:  %d \n", populacaoB > populacaoA);
+    printf("Area: %d \n", areaB > areaA);
+    printf("PIB:  %d \n", pibB > pibA);
+    printf("Pontos Turisticos: %d \n", numeropontosturisticosB > numeropontosturisticosA);
+    printf("Densidade: %d \n", densidade_populacionalB > densidade_populacionalA);
+    printf("PIB per Capta: %d \n", pib_per_capitaB > pib_per_capitaA);
+    printf("Super Poder: %d \n", superpoderB > superpoderA);
+
+
+}
