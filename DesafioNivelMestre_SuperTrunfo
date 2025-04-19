@@ -41,7 +41,7 @@ int main(){
     printf("Numero de pontos Turisticos: %d \n", numeropontosturisticosA);
     printf("Densidade Populacional: %.2f Hab/km2\n", densidade_populacionalA);
     printf("PIB Per Capita: %.2f Reais  \n", pib_per_capitaA);
-    superpoderA = (float)(populacaoA + areaA + pibA + numeropontosturisticosA + pib_per_capitaA) - (densidade_populacionalA);
+    superpoderA = (float)(populacaoA + areaA + pibA + numeropontosturisticosA + pib_per_capitaA) / (densidade_populacionalA);
     printf("Super Poder de A: %.2f \n", superpoderA);
 
     printf("Carta 2 \n");
@@ -55,30 +55,30 @@ int main(){
     printf("Numero de pontos Turisticos: %d \n", numeropontosturisticosB);
     printf("Densidade Populacional: %.2f Hab/km2\n", densidade_populacionalB);
     printf("PIB Per Capita: %.2f Reais  \n", pib_per_capitaB);
-    superpoderB = (float)(populacaoB + areaB + pibB + numeropontosturisticosB + pib_per_capitaB) - (densidade_populacionalB);
+    superpoderB = (float)(populacaoB + areaB + pibB + numeropontosturisticosB + pib_per_capitaB) / (densidade_populacionalB);
     printf("Super Poder de B: %.2f \n", superpoderB);
 
 
     printf("Comparacao de Cartas \n");
     printf("Carta 1 \n");
 
-    printf("Populacao: %d \n", populacaoA > populacaoB);
-    printf("Area:%d \n", areaA > areaB);
-    printf("PIB: %d \n", pibA > pibB);
-    printf("Pontos Turisticos:%d \n", numeropontosturisticosA > numeropontosturisticosB);
-    printf("Densidade: %d \n", densidade_populacionalA > densidade_populacionalB);
-    printf("PIB per Capta: %d \n", pib_per_capitaA > pib_per_capitaB);
-    printf("Super Poder: %d \n", superpoderA > superpoderB);
+    printf("Populacao Carta 1: %d \n", populacaoA > populacaoB);
+    printf("Area Carta 1:%d \n", areaA > areaB);
+    printf("PIB Carta 1: %d \n", pibA > pibB);
+    printf("Pontos Turisticos Carta 1:%d \n", numeropontosturisticosA > numeropontosturisticosB);
+    printf("Densidade Carta 1: %d \n", densidade_populacionalA > densidade_populacionalB);
+    printf("PIB per Capta Carta 1: %d \n", pib_per_capitaA > pib_per_capitaB);
+    printf("Super Poder Carta 1: %d \n", superpoderA > superpoderB);
 
     printf("Carta 2 \n");
 
-    printf("Populacao:  %d \n", populacaoB > populacaoA);
-    printf("Area: %d \n", areaB > areaA);
-    printf("PIB:  %d \n", pibB > pibA);
-    printf("Pontos Turisticos: %d \n", numeropontosturisticosB > numeropontosturisticosA);
-    printf("Densidade: %d \n", densidade_populacionalB > densidade_populacionalA);
-    printf("PIB per Capta: %d \n", pib_per_capitaB > pib_per_capitaA);
-    printf("Super Poder: %d \n", superpoderB > superpoderA);
+    printf("Populacao Carta 2:  %d \n", populacaoB > populacaoA);
+    printf("Area Carta 2: %d \n", areaB > areaA);
+    printf("PIB Carta 2:  %d \n", pibB > pibA);
+    printf("Pontos Turisticos Carta 2: %d \n", numeropontosturisticosB > numeropontosturisticosA);
+    printf("Densidade Carta 2: %d \n", densidade_populacionalB > densidade_populacionalA);
+    printf("PIB per Capta Carta 2: %d \n", pib_per_capitaB > pib_per_capitaA);
+    printf("Super Poder Carta 2: %d \n", superpoderB > superpoderA);
 
 
 }
